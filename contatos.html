@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br" class=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" href="styles.css" >
+<link rel="stylesheet" href="all.css">
+<link rel="stylesheet" href="optimize.css">
+<link rel="stylesheet" href="lindi.css" >
+<link rel="stylesheet" href="nicepage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Fale conosco</title>
+<meta name=”description” content="Fale conosco, queremos ouvir vocês! De segunda a sexta, das 8:00h as 18:00h.">
+
+
+<style>
+    .box {
+      border: 1px solid #000;
+      padding: 20px;
+      width: 500px;
+    }
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        #container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #9a376b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 2px;
+            display: left;
+            flex-direction: column;
+            align-items: left;
+        }
+        #container2 {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: left;
+            flex-direction: left;
+            align-items: left;
+        }
+        #select-box {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #select-setor {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+            background-color: #ffffff
+        }
+        #email-list-container {
+            display: flex;
+            flex-direction: left;
+            align-items: left;
+        }
+        #email-list {
+            width: 50%;
+        }
+        #setor-image {
+            max-width: 50%;
+            height: auto;
+            display: none; /* Ocultar a imagem inicialmente */
+        }
+  </style>
+
+
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+      <a href="https://jkmseguros.com.br/"><img src="images/logo.svg" alt="JKM Seguros Prime"  class="img-fluid" height="60"> </a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" target="_self">HOME</a>
+      <a href="servicos.html" target="_self">SERVIÇOS</a>
+      <a href="contato.html" target="_self">CONTATO</a>
+      <a href="sobre.html" target="_self">SOBRE           </a>
+      <div class="submenu">
+        <a href="#" class="submenu-trigger">ÁREA DO CLIENTE ↴</a>
+        <div class="submenu-content">
+          <a href="http://201.17.130.207:86/IMC046_88/app_Login/app_Login.php" target="_blank">GARANTIAS WEB (GW)</a>
+          <a href="https://app.segimob.com/auth/login" target="_blank">SEGIMOB</a>
+          <a href="https://datasetparceiros.com.br/" target="_blank">SACWEB</a>
+          <a href="https://avaliza.com/app-home/" target="_blank">AVALIZA</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<br><br><br>
+
+<!-- SEÇÃO DE CONTATOS -->
+<section class="front-page-3" id="produtos">
+    <div class="wrap">
+        <section id="text-4" class="widget widget_text full-width first">
+            <div class="widget-wrap">
+                <div class="textwidget">
+                    <h2 class="centro">Nossos Emails</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<!-- FIM DA SEÇÃO DE CONTATOS -->
+
+<br><br><br>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Contato</title>
+</head>
+<body>
+<div id="container">
+        <div id="select-box">
+        <font color="white">Selecione o Setor:</font> 
+            <select id="select-setor">
+                <option value="null">------</option>
+                <option value="Diretoria">Diretoria</option>
+                <option value="Fiança">Seguro Fiança</option>
+                <option value="Incêndio">Seguro Incêndio</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Título de Capitalização">Título de Capitalização</option>
+                <option value="Auto e Benefícios">Seguro Auto e Benefícios</option>
+            </select>
+        </div>
+    </div>
+    <br><br>
+    <div id="container2">
+        <div id="email-list-container">
+            <div id="email-list">
+                <!-- Lista de emails será preenchida aqui -->
+            </div>
+            <img id="setor-image" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        const emailList = {
+            "Fiança": "peron@jkmseguros.com.br,fiancaatendimento@jkmseguros.com.br,fiancapagamento@jkmseguros.com.br,fiancaaprovacao@jkmseguros.com.br,fiancarenovcao@jkmseguros.com.br,sinistro1@jkmseguros.com.br,sinistro2@jkmseguros.com.br,sinistro3@jkmseguros.com.br,titulonovo@jkmseguros.com.br,tituloresgate@jkmseguros.com.br",
+            "Diretoria": "joelma@jkmseguros.com.br,keila@jkmseguros.com.br,mariana@jkmseguros.com.br,adriano@jkmseguros.com.br",
+            "Incêndio": "debora@jkmseguros.com.br,incendio@jkmseguros.com.br,reseguros@jkmseguros.com.br,sinistrore@jkmseguros.com.br",
+            "Financeiro": "financeiro@jkmseguros.com.br,administrativo@jkmseguros.com.br,adm@jkmseguros.com.br",
+            "Título de Capitalização": "titulonovo@jkmseguros.com.br,tituloresgate@jkmseguros.com.br",
+            "Auto e Benefícios": "bruno@jkmseguros.com.br"
+        };
+
+        const setorImages = {
+            "Fiança": "images/fianca.png",
+            "Diretoria": "images/diretoria.png",
+            "Incêndio": "images/incendio.png",
+            "Financeiro": "images/financeiro.png",
+            "Título de Capitalização": "images/titulo.png",
+            "Auto e Benefícios": "images/auto.png"
+        };
+
+        const selectSetor = document.getElementById("select-setor");
+        const emailListDiv = document.getElementById("email-list");
+        const setorImage = document.getElementById("setor-image");
+
+        selectSetor.addEventListener("change", () => {
+            const selectedSetor = selectSetor.value;
+            const emails = emailList[selectedSetor].split(",");
+            const emailListHTML = emails.map(email => `<p>${email}</p>`).join("");
+            emailListDiv.innerHTML = emailListHTML;
+            const setImageSrc = setorImages[selectedSetor] || "";
+            setorImage.src = setImageSrc;
+            setorImage.style.display = setImageSrc ? "block" : "none";
+        });
+    </script>
+
+
+<!-- SEÇÃO DE RODAPÉ -->
+<br><br><br>
+<center>
+<img src="images/logo.svg" alt="JKM Seguros Prime" class="img-fluid" height="60">
+</center>
+
+
+
+</section>
+</div>
+</section>
+<footer class="site-footer">
+<div class="footer-widgets" id="genesis-footer-widgets">
+<h2 class="genesis-sidebar-title screen-reader-text">Footer</h2>
+<div class="wrap">
+<div class="widget-area footer-widgets-1 footer-widget-area">
+
+<div class="widget-area footer-widgets-4 footer-widget-area">
+<section id="custom_html-22" class="widget_text widget widget_custom_html">
+    <div class="widget_text widget-wrap">
+        <div class="textwidget custom-html-widget">
+                </i>
+                <center>
+                <br> Rua José Pedro Drumond 49, Floresta - BH | MG CEP 30150-040 <br>
+                (31) 2115-5100</a><br>
+                atendimento@jkmseguros.com.br<br>
+                <div class="col-md-3">
+                <a>Siga-nos</a>
+                      <a href="https://www.facebook.com/jkm.seguros/" target="_blank" class="fa fa-facebook"></span></a>
+                      <a href="https://www.instagram.com/jkm.seguros/" target="_blank" class="fa fa-instagram"></span></a>
+                  </div>
+                </center>
+                <small>Copyright 2021 Jkm Corretora de Seguros LTDA. Todos os direitos reservados. CNPJ n.º 41.806.767/0001-90. A Jkm Seguros Prime atua em estrita observância à legislação securitária. Registro SUSEP n.º 21.2123948</small>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-credits">
+<div class="wrap">
+</div>
+</div>
+<div class="et_pb_top_inside_divider"></div>
+</footer>
+</div>
+</div>
+</span></div>
+<!-- FIM DA SEÇÃO DE RODAPÉ -->
+      </body>
+      </html>
